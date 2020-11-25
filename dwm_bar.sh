@@ -18,8 +18,8 @@ DIR=$(dirname "$LOC")
 export IDENTIFIER="unicode"
 
 # Change the charachter(s) used to seperate modules. If two are used, they will be placed at the start and end.
-export SEP1="["
-export SEP2="]"
+export SEP1=" // "
+# export SEP2="]"
 
 # Import the modules
 . "$DIR/bar-functions/dwm_countdown.sh"
@@ -49,26 +49,26 @@ do
 
     # Append results of each func one by one to a string
     dispstr=""
-    dispstr="$dispstr$(dwm_connman)"
-    dispstr="$dispstr$(dwm_countdown)"
-    dispstr="$dispstr$(dwm_alarm)"
-    dispstr="$dispstr$(dwm_transmission)"
-    dispstr="$dispstr$(dwm_cmus)"
-    dispstr="$dispstr$(dwm_mpc)"
-    dispstr="$dispstr$(dwm_spotify)"
-    dispstr="$dispstr$(dwm_resources)"
+#    dispstr="$dispstr$(dwm_connman)"
+#    dispstr="$dispstr$(dwm_countdown)"
+#    dispstr="$dispstr$(dwm_alarm)"
+#    dispstr="$dispstr$(dwm_transmission)"
+#    dispstr="$dispstr$(dwm_cmus)"
+#    dispstr="$dispstr$(dwm_mpc)"
+#    dispstr="$dispstr$(dwm_spotify)"
+#    dispstr="$dispstr$(dwm_resources)"
     dispstr="$dispstr$(dwm_battery)"
-    dispstr="$dispstr$(dwm_mail)"
+#    dispstr="$dispstr$(dwm_mail)"
     dispstr="$dispstr$(dwm_backlight)"
     dispstr="$dispstr$(dwm_alsa)"
-    dispstr="$dispstr$(dwm_pulse)"
-    dispstr="$dispstr$(dwm_weather)"
-    dispstr="$dispstr$(dwm_vpn)"
-    dispstr="$dispstr$(dwm_networkmanager)"
-    dispstr="$dispstr$(dwm_keyboard)"
-    dispstr="$dispstr$(dwm_ccurse)"
+#    dispstr="$dispstr$(dwm_pulse)"
+#    dispstr="$dispstr$(dwm_weather)"
+#    dispstr="$dispstr$(dwm_vpn)"
+#    dispstr="$dispstr$(dwm_networkmanager)"
+#    dispstr="$dispstr$(dwm_keyboard)"
+#    dispstr="$dispstr$(dwm_ccurse)"
     dispstr="$dispstr$(dwm_date)"
-    dispstr="$dispstr$(dwm_loadavg)"
+#    dispstr="$dispstr$(dwm_loadavg)"
 
     xsetroot -name "$dispstr"
     sleep 1

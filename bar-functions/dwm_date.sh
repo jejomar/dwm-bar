@@ -7,10 +7,10 @@
 # Date is formatted like like this: "[Mon 01-01-00 00:00:00]"
 dwm_date () {
     printf "%s" "$SEP1"
-    if [ "$IDENTIFIER" = "unicode" ]; then
+    if [ "$IDENTIFIER" = "" ]; then
         printf "📆 %s" "$(date "+%a %d-%m-%y %T")"
     else
-        printf "DAT %s" "$(date "+%a %d-%m-%y %T")"
+        printf " %s" "$(date "+%A %d %B %Y | %H:%M ")"
     fi
     printf "%s\n" "$SEP2"
 }
