@@ -10,7 +10,7 @@ dwm_date () {
     if [ "$IDENTIFIER" = "" ]; then
         printf "📆 %s" "$(date "+%a %d-%m-%y %T")"
     else
-        printf " %s" "$(date "+%A %d %B %Y | %H:%M ")"
+        printf " %s" "$(date "+%A %d %B %Y | %H:%M") "
     fi
     printf "%s\n" "$SEP2"
 }
