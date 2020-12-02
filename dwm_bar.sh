@@ -54,7 +54,7 @@ do
 #    dispstr="$dispstr$(dwm_alarm)"
 #    dispstr="$dispstr$(dwm_transmission)"
 #    dispstr="$dispstr$(dwm_cmus)"
-#    dispstr="$dispstr$(dwm_mpc)"
+    dispstr="$dispstr$(dwm_mpc)"
 #    dispstr="$dispstr$(dwm_spotify)"
 #    dispstr="$dispstr$(dwm_resources)"
     dispstr="$dispstr$(dwm_battery)"

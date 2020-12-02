@@ -15,7 +15,7 @@ dwm_mpc () {
         STATUS=$(mpc status | sed -n 2p | awk '{print $1;}')
         SHUFFLE=$(mpc status | tail -n 1 | awk '{print $6}')
 
-        if [ "$IDENTIFIER" = "unicode" ]; then
+        if [ "$IDENTIFIER" = "" ]; then
             if [ "$STATUS" = "[playing]" ]; then
                 STATUS="▶"
             else
@@ -29,13 +29,13 @@ dwm_mpc () {
             fi
         else
             if [ "$STATUS" = "[playing]" ]; then
-                STATUS="PLA"
+                STATUS=""
             else
-                STATUS="PAU"
+                STATUS=""
             fi
 
             if [ "$SHUFFLE" = "on" ]; then
-                SHUFFLE=" S"
+                SHUFFLE=" "
             else
                 SHUFFLE=""
             fi
